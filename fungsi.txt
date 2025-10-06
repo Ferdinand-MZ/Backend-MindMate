@@ -1,0 +1,16 @@
+1. mongoose berfungsi sebagai objek untuk data modeling atau odm library untuk nodejs,
+
+Promise di JavaScript itu objek yang merepresentasikan hasil dari operasi asynchronous (sesuatu yang butuh waktu, misalnya ambil data dari server).
+
+📌 Logikanya: janji (promise) bisa dalam 3 keadaan:
+
+Pending → janji masih proses, belum tahu hasilnya.
+
+Fulfilled → janji ditepati, hasil sukses dikembalikan.
+
+Rejected → janji gagal, error dikembalikan.
+
+2. interface berfungsi untuk menentukan gimana bentuk suatu object
+
+fungsi setiap file :
+db.ts = mengatur logika di database
