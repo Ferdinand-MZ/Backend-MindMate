@@ -5,7 +5,6 @@ import {register, login, logout} from "../controllers/authController"
 import {auth} from "../middleware/auth"
 
 const router = Router()
-
 // POST /auth/register
 router.post("/register", register)
 

@@ -23,6 +23,7 @@ export const createChatSession = async (req: Request, res: Response) => {
     }
 
     const userId = new Types.ObjectId(req.user.id);
+    console.log("req.user:", req.user);
     const user = await User.findById(userId);
 
     if(!user) {
@@ -221,7 +222,7 @@ export const getChatHistory = async (req: Request, res: Response) => {
       return res.status(403).json({ message: "Akses ditolak untuk sesi chat ini" });
     }
 
-    res.json({ messages: session.messages });
+    res.json(session.messages);
   } catch (error) {
     logger.error("Error getChatHistory:", error);
     res.status(500).json({ message: "Error fetch riwayat sesi" });
